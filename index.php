@@ -4,11 +4,7 @@
 	require_once 'connect.php';
 	require_once 'LoginUser.php';
 
-	$log = new LoginUser($db_location, $db_login, $db_password, $db_name);
-	                									 
-
-	
-	
+	$log = new LoginUser($db_location, $db_login, $db_password, $db_name);	                									 
 ?>	
 
 <!DOCTYPE HTML>

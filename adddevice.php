@@ -1,8 +1,7 @@
 <?php
 	session_start();
 	if($_SESSION['is_login'] == false)
-		{
-			
+		{			
 			header('Location: index.php');
 			exit;
 		}
@@ -11,7 +10,6 @@
 		require_once 'SearchEditUpdateDelete.php';
 
 		
-
 		if(!empty($_POST['producent']))
 		{
 			$producent = $_POST['producent'];
@@ -54,8 +52,7 @@
 			$add_device -> Add($producent, $model, $sn, $sid, $st, $cpu, $ram, $hdd, $surname, $name, $date, $notice);
 			
 			unset($producent, $model, $sn, $sid, $st, $cpu, $ram, $hdd, $surname, $name, $date, $notice);
-			
-			
+						
 		};	
 ?>
 
@@ -91,15 +88,15 @@
 			<div id = 'add'>Data:      </div><input type="date" name="date"      placeholder="data"  value="2000-01-01" />     <br/>
 			<div id = 'add'>Uwagi:     </div><input type="text" name="notice"    placeholder="uwagi" />    <br/></br>
 			
-            <input type="submit" value="Send">	
-		</form>
+            <input type="submit" value="Zapisz">	
+		</form></br>
 			
 		<div id= "downmenu2">
 			<a href="home.php">Powrót</a></br>
-		</div>
+		</div></br>
 			
 		<div id= "downmenu2">	
-			<input type="submit" onclick="logout()" id="Wyloguj się" value = "logout"/>
+			<input type="submit" onclick="logout()" id="Wyloguj się" value = "Wyloguj się"/>
 		</div>	
 		
 	</body>

@@ -45,11 +45,11 @@
 					</select>
 
 						<input type="text" name="text"/>
-					    <input type="submit" value="search"/><br/><br/><br/>	
+					    <input type="submit" value="Szukaj"/><br/><br/><br/>	
 			</form>
 		</div>
 		<div id= "downmenu1">
-			<a href="adddevice.php">Add Device</a><br/>
+			<a href="adddevice.php">Dodaj</a><br/>
 		</div>
 		
 
@@ -89,7 +89,7 @@
 
 ?>
 		<div id= "downmenu2">	
-			<input type="submit" onclick="logout()" id="Wyloguj się" value = "logout"/>
+			<input type="submit" onclick="logout()" id="Wyloguj się" value = "Wyloguj się"/>
 		</div>	
 	</body>
 </html>

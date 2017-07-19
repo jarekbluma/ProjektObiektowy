@@ -75,6 +75,10 @@
 				{
 					event.preventDefault(); 
 				}
+				else
+				{
+					alert("Usunieto!");
+				}
 			}
 </script>		
 </head>
