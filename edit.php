@@ -67,11 +67,20 @@
 					return true;
 				}
 			}
-</script>	
+</script>
+<script type="text/javascript">
+			function del(event)
+			{
+				if(!confirm("Czy usunąć rekord?"))
+				{
+					event.preventDefault(); 
+				}
+			}
+</script>		
 </head>
 	<body>
 		<form action="" method="POST">
-			<input type="submit" name="delete" value="Delete"/>
+			<input type="submit" onclick="del(event)" name="delete" value="Delete"/>
 		</form>
 
 <?php
@@ -85,7 +94,7 @@
 		</div></br>
 		
 		<div id= "downmenu2">	
-			<input type="submit" onclick="logout()" id="Wyloguj się" value = "logout"/>
+			<input type="submit" onclick="logout()" id="Wyloguj się" value = "Wyloguj się"/>
 		</div>			
 	</body>
 </html>

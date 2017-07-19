@@ -8,8 +8,6 @@
 		}
 ?>
 
-
-
 <!DOCTYPE HTML>
 <html lang = "pl">
 <head>
