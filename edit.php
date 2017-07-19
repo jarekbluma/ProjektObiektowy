@@ -84,7 +84,7 @@
 </head>
 	<body>
 		<form action="" method="POST">
-			<input type="submit" onclick="del(event)" name="delete" value="Delete"/>
+			<input type="submit" onclick="del(event)" name="delete" value="Usuń"/>
 		</form>
 
 <?php

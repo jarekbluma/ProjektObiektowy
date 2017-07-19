@@ -87,7 +87,7 @@ class Search_Edit_Update_Delete
 							  <br>   <div id = 'add'>Data:      </div>     <input type = 'date'  name = 'data'         value =" . $row['data']      . ">
 							  <br>   <div id = 'add'>Uwagi:     </div>     <input type = 'text'  name = 'uwagi'        value =" . $row['uwagi']     . ">
 
-							  <br><br>  <input type = 'submit' value = 'Save'> 	
+							  <br><br>  <input type = 'submit' value = 'Zapisz'> 	
 					      </form>";
 				}	
 			}
