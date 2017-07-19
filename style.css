@@ -1,0 +1,231 @@
+body
+{
+	background-color: #E6E6FA;
+}
+#container
+{
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: auto;
+	margin-top: 140px;
+	width: 500px;
+	background-color: #FFFFF0;
+	text-align: center;
+	font-size: 20px;
+	border-width: 1px;
+	border-color: #000000;
+	border-style: solid;
+	-webkit-box-shadow: 10px 9px 32px 6px rgba(0,0,0,0.73);
+    -moz-box-shadow: 10px 9px 32px 6px rgba(0,0,0,0.73);
+    box-shadow: 10px 9px 32px 6px rgba(0,0,0,0.73);
+}
+
+input
+{
+	font-size: 18px;
+	color: #111;
+	background-color: #BBB;
+	border-radius: 4px;
+	border: 2px solid #555;
+	padding: 5px;
+	-webkit-box-shadow: 10px 9px 32px 6px rgba(0,0,0,0.30);
+    -moz-box-shadow: 10px 9px 32px 6px rgba(0,0,0,0.30);
+    box-shadow: 10px 9px 32px 6px rgba(0,0,0,0.30);
+}
+
+.select
+{
+	margin-top: 30px;
+}
+
+select 
+{
+    
+    border: 2px;
+    color: #FFFFFF;
+    background: #000;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 2px 10px;
+    width: 378px;    
+}
+
+#downmenu1
+{
+	 
+     font-size: 18px;
+     border: 2px solid #777;
+     color: #FFFFFF;
+     background: #000;
+     border-radius: 4px;
+     padding: 5px;
+          
+}
+
+#downmenu1:hover
+{
+	background: #AAA;
+	cursor: pointer;
+	color: white;
+}
+
+#downmenu2:hover
+{
+	background: #AAA;
+	cursor: pointer;
+	color: white;
+}
+
+#edit_delete
+{	 
+     font-size: 18px;
+     border: 2px solid #777;
+     color: #FFFFFF;
+     background: #444;
+     border-radius: 4px;
+     padding: 5px;       
+}
+
+#edit_delete:hover
+{
+	background: #AAA;
+	cursor: pointer;
+	color: white;
+}
+
+a:link
+{
+	color:white;
+}
+
+a:visited
+{
+	color:white;
+}
+
+a:hover
+{
+	color:white;
+}
+
+#downmenu2
+{	 
+     font-size: 18px;
+     border: 2px solid #777;
+     color: #FFFFFF;
+     background: #000;
+     border-radius: 4px;
+     padding: 5px;    
+}
+
+#search
+{
+	background-color: #CCC;
+}
+
+#id
+{
+    width: 50px;
+	float: left;
+	background-color: #BBB;
+	text-align: center;
+}
+
+#producent
+{
+    width: 140px;
+	float: left;
+	text-align: center;
+}
+
+#model
+{
+    width: 140px;
+	float: left;
+	background-color: #BBB;
+	text-align: center;
+}
+
+#sn
+{
+    width: 170px;
+	float: left;
+	text-align: center;
+}
+
+#sid
+{
+    width: 140px;
+	float: left;
+	background-color: #BBB;
+	text-align: center;
+}
+
+#st
+{
+    width: 140px;
+	float: left;
+	text-align: center;	
+}
+
+#cpu
+{
+    width: 140px;
+	float: left;
+	background-color: #BBB;
+	text-align: center;
+}
+
+#ram
+{
+    width: 140px;
+	float: left;
+	text-align: center;	
+}
+
+#hdd
+{
+    width: 140px;
+	float: left;
+	background-color: #BBB;
+	text-align: center;
+}
+
+#nazwisko
+{
+    width: 220px;
+	float: left;
+	text-align: center;	
+}
+
+#imie
+{
+    width: 220px;
+	float: left;
+	background-color: #BBB;
+	text-align: center;
+}
+
+#data
+{
+    width: 140px;
+	float: left;
+	text-align: center;	
+}
+
+#uwagi
+{
+    width: 1500px;
+	clear: both;
+}
+
+#upmenu
+{
+	width: auto;
+}
+
+#add
+{
+	width: 350px;
+
+}
