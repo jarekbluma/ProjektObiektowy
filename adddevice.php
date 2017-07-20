@@ -75,25 +75,24 @@
 </head>
 	<body>
 		<form action="" method="post">
-			<div id = 'add'>*Producent:</div><input type="text" name="producent" placeholder="producent" /><br/>
-			<div id = 'add'>Model:	   </div><input type="text" name="model"	 placeholder="model" />    <br/>
-			<div id = 'add'>S/N:	   </div><input type="text" name="sn"        placeholder="S/N" />      <br/>
-			<div id = 'add'>SID:       </div><input type="text" name="sid"       placeholder="SID" />      <br/>
-			<div id = 'add'>ST:        </div><input type="text" name="st"        placeholder="ST" />       <br/>
-			<div id = 'add'>CPU:       </div><input type="text" name="cpu"       placeholder="CPU" />      <br/>
-			<div id = 'add'>RAM:       </div><input type="text" name="ram"       placeholder="RAM" />      <br/>
-			<div id = 'add'>HDD:       </div><input type="text" name="hdd"       placeholder="HDD" />      <br/>
-			<div id = 'add'>Nazwisko:  </div><input type="text" name="surname"   placeholder="Nazwisko" /> <br/>
-			<div id = 'add'>Imię:      </div><input type="text" name="name"      placeholder="Imie" />     <br/>
-			<div id = 'add'>Data:      </div><input type="date" name="date"      placeholder="data"  value="2000-01-01" />     <br/>
-			<div id = 'add'>Uwagi:     </div><input type="text" name="notice"    placeholder="uwagi" />    <br/></br>
-			
-            <input type="submit" value="Zapisz">	
-		</form></br>
+			<div id = 'add'>*Producent:</div> <input type="text" name="producent" placeholder="producent" /><br>
+			<div id = 'add'>Model:	   </div> <input type="text" name="model"	  placeholder="model" />    <br>
+			<div id = 'add'>S/N:	   </div> <input type="text" name="sn"        placeholder="S/N" />      <br>
+			<div id = 'add'>SID:       </div> <input type="text" name="sid"       placeholder="SID" />      <br>
+			<div id = 'add'>ST:        </div> <input type="text" name="st"        placeholder="ST" />       <br>
+			<div id = 'add'>CPU:       </div> <input type="text" name="cpu"       placeholder="CPU" />      <br>
+			<div id = 'add'>RAM:       </div> <input type="text" name="ram"       placeholder="RAM" />      <br>
+			<div id = 'add'>HDD:       </div> <input type="text" name="hdd"       placeholder="HDD" />      <br>
+			<div id = 'add'>Nazwisko:  </div> <input type="text" name="surname"   placeholder="Nazwisko" /> <br>
+			<div id = 'add'>Imię:      </div> <input type="text" name="name"      placeholder="Imie" />     <br>
+			<div id = 'add'>Data:      </div> <input type="date" name="date"      placeholder="data"  value="2000-01-01"/><br>
+			<div id = 'add'>Uwagi:     </div> <input type="text" name="notice"    placeholder="uwagi" />    <br><br>			
+            <input type="submit" value="Zapisz">           	
+		</form><br>
 			
 		<div id= "downmenu2">
-			<a href="home.php">Powrót</a></br>
-		</div></br>
+			<a href="home.php">Powrót</a><br>
+		</div><br>
 			
 		<div id= "downmenu2">	
 			<input type="submit" onclick="logout()" id="Wyloguj się" value = "Wyloguj się"/>

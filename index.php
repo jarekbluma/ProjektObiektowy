@@ -18,8 +18,7 @@
 	<div id = "container">
 	<h1>Logowanie</h1>
 		<form action="" method="post">
-			Login: <input type="text" name="login" placeholder="Login" /><br/>
-			Hasło: <input type="password" name="password" placeholder="Hasło" /><br/><br/>
+			Login: <input type="text" name="login" placeholder="Login"/><br>
 <?php
 							if(isset($_POST['login']) && isset($_POST['password']))
 							{
@@ -31,7 +30,7 @@
 						    	unset ($_POST['password']);
 						    }	
 ?>			
-				   <input type="submit" value="Log in"><br/><br/>	
+				   <input type="submit" value="Log in"><br><br>	
 		</form>	
 	</div>	
 

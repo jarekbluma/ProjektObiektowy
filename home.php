@@ -30,34 +30,31 @@
 			<form action="" method="post">
 				
 					<select name="form">
-						<option value="1">Producent: </option>
-						<option value="2">Model: </option>
-						<option value="3">SN: </option>   
-						<option value="4">SID: </option>  
-						<option value="5">ST:	 </option>  
-						<option value="6">CPU:  </option> 
-						<option value="7">RAM:  </option> 
-						<option value="8">HDD: </option>  
-						<option value="9">Uwagi: </option>
-						<option value="10">Nazwisko: </option>	 
-						<option value="11">Imię: </option>		 
+						<option value="1">Producent:    </option>
+						<option value="2">Model:        </option>
+						<option value="3">SN:           </option>   
+						<option value="4">SID:          </option>  
+						<option value="5">ST:	        </option>  
+						<option value="6">CPU:          </option> 
+						<option value="7">RAM:          </option> 
+						<option value="8">HDD:          </option>  
+						<option value="9">Uwagi:        </option>
+						<option value="10">Nazwisko:    </option>	 
+						<option value="11">Imię:        </option>		 
 						<option value="12">Data zakupu: </option>
 					</select>
 
 						<input type="text" name="text"/>
-					    <input type="submit" value="Szukaj"/><br/><br/><br/>	
+					    <input type="submit" value="Szukaj"/><br><br><br>	
 			</form>
 		</div>
 		<div id= "downmenu1">
-			<a href="adddevice.php">Dodaj</a><br/>
+			<a href="adddevice.php">Dodaj</a><br>
 		</div>
-		
-
 <?php									
 		require_once 'connect.php';
 		require_once 'SearchEditUpdateDelete.php';
-		
-		
+				
 		$search_device = new Search_Edit_Update_Delete($db_location, $db_login, $db_password, $db_name);
 
 		if(!empty($_POST['text']))
@@ -80,13 +77,9 @@
 					     <div id='imie'>Imię</div>
 					     <div id='data'>Data</div></br></br>					    
 		</div>
-
 <?php			
-			$search_device -> Search($search, $form);	
-														//Search method
-															
+			$search_device -> Search($search, $form);															
 		};
-
 ?>
 		<div id= "downmenu2">	
 			<input type="submit" onclick="logout()" id="Wyloguj się" value = "Wyloguj się"/>

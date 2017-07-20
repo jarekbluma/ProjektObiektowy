@@ -126,5 +126,4 @@ class Search_Edit_Update_Delete
 		header("Refresh:0");
 	}
 }
-
 ?>

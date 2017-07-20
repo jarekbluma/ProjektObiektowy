@@ -86,7 +86,6 @@
 		<form action="" method="POST">
 			<input type="submit" onclick="del(event)" name="delete" value="Usuń"/>
 		</form>
-
 <?php
 		if(isset($_POST['delete']))
 		{
@@ -95,7 +94,7 @@
 ?>		
 		<div id= "downmenu2">
 			<a href="home.php">Powrót</a>
-		</div></br>
+		</div><br>
 		
 		<div id= "downmenu2">	
 			<input type="submit" onclick="logout()" id="Wyloguj się" value = "Wyloguj się"/>
