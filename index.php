@@ -19,6 +19,7 @@
 	<h1>Logowanie</h1>
 		<form action="" method="post">
 			Login: <input type="text" name="login" placeholder="Login"/><br>
+			Hasło: <input type="password" name="password" placeholder="Hasło"/><br><br>
 <?php
 							if(isset($_POST['login']) && isset($_POST['password']))
 							{
