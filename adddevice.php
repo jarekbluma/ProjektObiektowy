@@ -6,9 +6,8 @@
 			exit;
 		}
 
-		require_once 'connect.php';
-		require_once 'SearchEditUpdateDelete.php';
-
+		require_once (__DIR__ . '\connect.php');
+		require_once (__DIR__ . '\Classes\SearchEditUpdateDelete.php');
 		
 		if(!empty($_POST['producent']))
 		{
@@ -61,7 +60,7 @@
 <head>
 <meta charset = "UTF-8"/>
 <meta http-equiv = "X-UA-compatible" content = "IE = edge, chrome=1"/>
-<link rel="stylesheet" href="style.css" type="text/css"/>
+<link rel="stylesheet" href="css/style.css" type="text/css"/>
 <script type="text/javascript">
 			function logout()
 			{
