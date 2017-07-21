@@ -13,7 +13,7 @@
 <head>
 <meta charset = "UTF-8"/>
 <meta http-equiv = "X-UA-compatible" content = "IE = edge, chrome=1"/>
-<link rel="stylesheet" href="style.css" type="text/css"/>
+<link rel="stylesheet" href="css/style.css" type="text/css"/>
 <script type="text/javascript">
 			function logout()
 			{
@@ -52,8 +52,8 @@
 			<a href="adddevice.php">Dodaj</a><br>
 		</div>
 <?php									
-		require_once 'connect.php';
-		require_once 'SearchEditUpdateDelete.php';
+		require_once (__DIR__ . '\connect.php');
+		require_once (__DIR__ . '\Classes\SearchEditUpdateDelete.php');
 				
 		$search_device = new Search_Edit_Update_Delete($db_location, $db_login, $db_password, $db_name);
 
