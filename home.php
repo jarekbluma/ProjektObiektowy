@@ -1,8 +1,7 @@
 <?php
 		session_start();
 		if($_SESSION['is_login'] == false)
-		{
-			
+		{			
 			header('Location: index.php');
 			exit;
 		}
@@ -64,18 +63,18 @@
 ?>
 
 		<div id = "upmenu">
-						 <div id='id'>ID</div>
+						 <div id='id'>ID              </div>
 					     <div id='producent'>Producent</div>
-					     <div id='model'>Model</div>
-					     <div id='sn'>SN</div>
-					     <div id='sid'>SID</div>
-					     <div id='st'>ŚT</div>
-					     <div id='cpu'>CPU</div>
-					     <div id='ram'>RAM</div>
-					     <div id='hdd'>HDD</div>
-					     <div id='nazwisko'>Nazwisko</div>
-					     <div id='imie'>Imię</div>
-					     <div id='data'>Data</div></br></br>					    
+					     <div id='model'>Model        </div>
+					     <div id='sn'>SN              </div>
+					     <div id='sid'>SID            </div>
+					     <div id='st'>ŚT              </div>
+					     <div id='cpu'>CPU            </div>
+					     <div id='ram'>RAM            </div>
+					     <div id='hdd'>HDD            </div>
+					     <div id='nazwisko'>Nazwisko  </div>
+					     <div id='imie'>Imię          </div>
+					     <div id='data'>Data          </div></br></br>					    
 		</div>
 <?php			
 			$search_device -> Search($search, $form);															

@@ -7,6 +7,11 @@
 		public function __construct($db_location, $db_login, $db_password, $db_name)
 		{			
 			$this -> connect = mysqli_connect($db_location, $db_login, $db_password, $db_name);		
+			if (mysqli_connect_errno())
+			  {
+			 	 echo "Failed to connect to MySQL: " . mysqli_connect_error();
+			 	 exit;
+			  }
 		}
 
 		public function check_user($login, $unsafe_password)
@@ -29,6 +34,11 @@
 			{
 				echo "<span style='color:red'>Błąd loginu lub hasła!</span></br></br>";
 			}					
+		}
+		
+		public function __destruct()
+		{
+			mysqli_close($this -> connect);
 		}		
 	}
 ?>

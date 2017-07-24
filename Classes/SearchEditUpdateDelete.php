@@ -7,6 +7,11 @@ class Search_Edit_Update_Delete
 	public function __construct($db_location, $db_login, $db_password, $db_name)
 	{		
 		$this -> connect = mysqli_connect($db_location, $db_login, $db_password, $db_name);	
+		if (mysqli_connect_errno())
+			  {
+			 	 echo "Failed to connect to MySQL: " . mysqli_connect_error();
+			 	 exit;
+			  }
 	}
 	
 	public function Search($search, $option)
@@ -90,8 +95,7 @@ class Search_Edit_Update_Delete
 							  <br><br>  <input type = 'submit' value = 'Zapisz'> 	
 					      </form>";
 				}	
-			}
-			
+			}		
 			else
 			{
 				echo "<span style='color:red'><h3>Brak podanego parametru w bazie! </h3></span>";
@@ -110,20 +114,25 @@ class Search_Edit_Update_Delete
 		$sql = $this -> connect -> query("
 			UPDATE device SET
 		    producent = '$producent',
-			 model = '$model',
-			  sn = '$sn',
-			   sid = '$sid',
-			    st = '$st',
-			     cpu = '$cpu',
-			      ram = '$ram',
-			       hdd = '$hdd',
-			        nazwisko = '$nazwisko',
-			         imie = '$imie',
-			          data = '$data',
-			           uwagi = '$uwagi'
-			            WHERE id = '$id' ");
+			model = '$model',
+			sn = '$sn',
+			sid = '$sid',
+			st = '$st',
+			cpu = '$cpu',
+			ram = '$ram',
+			hdd = '$hdd',
+			nazwisko = '$nazwisko',
+			imie = '$imie',
+			data = '$data',
+			uwagi = '$uwagi'
+			WHERE id = '$id' ");
 
 		header("Refresh:0");
 	}
+
+	public function __destruct()
+		{
+			mysqli_close($this -> connect);
+		}		
 }
 ?>

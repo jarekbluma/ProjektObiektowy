@@ -4,12 +4,16 @@
 	{
 		protected $connect;
 
-
 		public function __construct($db_location, $db_login, $db_password, $db_name)
 		{
 			
 			$this -> connect = mysqli_connect($db_location, $db_login, $db_password, $db_name);
-		
+			if (mysqli_connect_errno())
+			  {
+			 	 echo "Failed to connect to MySQL: " . mysqli_connect_error();
+			 	 exit;
+			  }
+
 		}
 
 		public function Export($id)
@@ -67,7 +71,6 @@
 									$objPHPExcel -> getActiveSheet() -> setCellValue('E1', 'PION INFORMATYKI Karta wypożyczeń');
 										
 
-
 									$objPHPExcel->getActiveSheet()->setTitle('Chesse1');
 
 									header('Content-Type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet');
@@ -77,19 +80,18 @@
 									$objWriter = PHPExcel_IOFactory::createWriter($objPHPExcel, 'Excel2007');
 									$objWriter->save('php://output');
 									exit;	
-
 						}
 						
 					}
 					else
 					{
 						echo "<span style='color:red'>Brak podanego parametru w bazie!</span>";
-					}	
-				
-						
-
-			
+					}			
 		}	
 
+		public function __destruct()
+		{
+			mysqli_close($this -> connect);
+		}		
 	}
 ?>
