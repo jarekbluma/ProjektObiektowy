@@ -11,7 +11,7 @@
 			if (mysqli_connect_errno())
 			  {
 			 	 echo "Failed to connect to MySQL: " . mysqli_connect_error();
-			 	 exit;
+			 	 exit();
 			  }
 
 		}
@@ -79,7 +79,7 @@
 
 									$objWriter = PHPExcel_IOFactory::createWriter($objPHPExcel, 'Excel2007');
 									$objWriter->save('php://output');
-									exit;	
+									//exit();	
 						}
 						
 					}

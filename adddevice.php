@@ -3,7 +3,7 @@
 	if($_SESSION['is_login'] == false)
 		{			
 			header('Location: index.php');
-			exit;
+			exit();
 		}
 
 		require_once (__DIR__ . '\connect.php');
